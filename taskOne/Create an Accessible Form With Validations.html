@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Form</title>
+</head>
+<body>
+
+    <h1>Contact Form</h1>
+
+    <form>
+
+         <fieldset>
+            <legend>Personal Information</legend>
+
+             <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required 
+                   aria-describedby="nameHelp" aria-invalid="false">
+            <small id="nameHelp">Please enter your full name.</small>
+            <br><br>
+
+             <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                   aria-describedby="emailHelp" aria-invalid="false">
+            <small id="emailHelp">Enter a valid email address.</small>
+            <br><br>
+
+             <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required
+                   pattern="\d{10}"
+                   aria-describedby="phoneHelp" aria-invalid="false">
+            <small id="phoneHelp">10 digits only, e.g., 0123456789.</small>
+            <br><br>
+
+             <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required
+                   aria-describedby="dobHelp" aria-invalid="false">
+            <small id="dobHelp">Select your birth date.</small>
+            <br><br>
+        </fieldset>
+
+         <fieldset>
+            <legend>Your Message</legend>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required
+                      aria-describedby="messageHelp" aria-invalid="false"></textarea>
+            <small id="messageHelp">Write your message here.</small>
+            <br><br>
+        </fieldset>
+
+         <button type="submit">Send Message</button>
+
+    </form>
+
+</body>
+</html>
