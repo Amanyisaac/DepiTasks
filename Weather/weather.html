@@ -4,13 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Weather</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
      <link rel="stylesheet" href="weather.css">
     
 </head>
 <body>
- 
+<div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-sun icon-storm" style="font-size: 1.5rem;"></i>
+                Weather Now
+            </div>
+            <button class="btn-units"><i class="fas fa-cog"></i> Units</button>
+        </header>
 
+        <div class="search-section">
+            <h2>How's the sky looking today?</h2>
+            <br>
+            <div class="search-bar">
+                <i class="fas fa-search" style="padding-left: 15px; color: gray;"></i>
+                <input type="text" class="search-input" placeholder="Search for a place...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
 
+        <div class="dashboard">
+            
+            <div class="main-content">
+                
+                <div class="hero-card">
+                    <div class="hero-info">
+                        <h1>Berlin, Germany</h1>
+                        <p>Tuesday, Aug 5, 2025</p>
+                    </div>
+                    <div class="hero-weather">
+                        <i class="fas fa-sun" style="font-size: 5rem; color: #f1c40f; filter: drop-shadow(0 0 10px rgba(241, 196, 15, 0.5));"></i>
+                        <span class="hero-temp">20°</span>
+                    </div>
+                </div>
 
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <span class="detail-header">Feels Like</span>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="detail-value">18°</span>
+                            <i class="fas fa-temperature-high" style="font-size: 1.5rem; color: #ff7675;"></i>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <span class="detail-header">Humidity</span>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="detail-value">46%</span>
+                            <i class="fas fa-droplet" style="font-size: 1.5rem; color: #74b9ff;"></i>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <span class="detail-header">Wind</span>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="detail-value">14 <span style="font-size:0.8rem">km/h</span></span>
+                            <i class="fas fa-wind" style="font-size: 1.5rem; color: #a29bfe;"></i>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <span class="detail-header">Precipitation</span>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="detail-value">0 <span style="font-size:0.8rem">mm</span></span>
+                            <i class="fas fa-umbrella" style="font-size: 1.5rem; color: #81ecec;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="margin-bottom:15px;">Daily forecast</h3>
+                <div class="daily-grid">
+                    <div class="day-card">
+                        <span>Tue</span>
+                        <i class="fas fa-cloud-showers-heavy icon-rain" style="font-size: 1.5rem;"></i>
+                        <span>20°</span>
+                    </div>
+                    <div class="day-card">
+                        <span>Wed</span>
+                        <i class="fas fa-cloud-rain icon-rain" style="font-size: 1.5rem;"></i>
+                        <span>21°</span>
+                    </div>
+                    <div class="day-card">
+                        <span>Thu</span>
+                        <i class="fas fa-sun icon-sun" style="font-size: 1.5rem;"></i>
+                        <span>24°</span>
+                    </div>
+                    <div class="day-card">
+                        <span>Fri</span>
+                        <i class="fas fa-cloud-sun icon-cloud" style="font-size: 1.5rem;"></i>
+                        <span>25°</span>
+                    </div>
+                    <div class="day-card">
+                        <span>Sat</span>
+                        <i class="fas fa-bolt icon-storm" style="font-size: 1.5rem;"></i>
+                        <span>21°</span>
+                    </div>
+                    <div class="day-card">
+                        <span>Sun</span>
+                        <i class="fas fa-cloud icon-cloud" style="font-size: 1.5rem;"></i>
+                        <span>25°</span>
+                    </div>
+                    <div class="day-card">
+                        <span>Mon</span>
+                        <i class="fas fa-wind icon-wind" style="font-size: 1.5rem;"></i>
+                        <span>24°</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="hourly-header">
+                    <h3>Hourly forecast</h3>
+                    <span>Tuesday <i class="fas fa-chevron-down"></i></span>
+                </div>
+
+                <div class="hourly-list">
+                    <div class="hourly-row">
+                        <div style="display:flex; gap:10px; align-items:center;">
+                          <i class="fa-solid fa-cloud"></i>
+                             <span>3 PM</span>
+                        </div>
+                        <span>20°</span>
+                    </div>
+                    <div class="hourly-row">
+                        <div style="display:flex; gap:10px; align-items:center;">
+                            <i class="fas fa-cloud-sun icon-cloud"></i>
+                            <span>4 PM</span>
+                        </div>
+                        <span>20°</span>
+                    </div>
+                    <div class="hourly-row">
+                        <div style="display:flex; gap:10px; align-items:center;">
+                            <i class="fas fa-sun icon-sun"></i>
+                            <span>5 PM</span>
+                        </div>
+                        <span>20°</span>
+                    </div>
+                    <div class="hourly-row">
+                        <div style="display:flex; gap:10px; align-items:center;">
+                            <i class="fas fa-cloud-moon icon-cloud"></i>
+                            <span>6 PM</span>
+                        </div>
+                        <span>19°</span>
+                    </div>
+                    <div class="hourly-row">
+                        <div style="display:flex; gap:10px; align-items:center;">
+                            <i class="fas fa-moon icon-cloud"></i>
+                            <span>7 PM</span>
+                        </div>
+                        <span>18°</span>
+                    </div>
+                     <div class="hourly-row">
+                        <div style="display:flex; gap:10px; align-items:center;">
+                            <i class="fas fa-wind icon-wind"></i>
+                            <span>8 PM</span>
+                        </div>
+                        <span>18°</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
